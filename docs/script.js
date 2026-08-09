@@ -1,3 +1,4 @@
+alert("JS startet");
 const PASSWORD = "0303";
 
 const LS = {
