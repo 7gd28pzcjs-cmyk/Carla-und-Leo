@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Private Seite</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="loginOverlay" class="overlay">
+    <div class="login-card">
+      <h1 class="title">Private Seite</h1>
+      <p class="subtitle">Bitte Passwort eingeben.</p>
+      <input id="passwordInput" type="password" placeholder="Passwort" />
+      <div class="actions">
+        <button id="openBtn" class="btn primary">Öffnen</button>
+      </div>
+      <p id="loginMsg" class="login-msg"></p>
+    </div>
+  </div>
+
+  <main id="app" class="app hidden">
+    <header class="app-header">
+      <div class="brand">
+        <div class="logo">PS</div>
+        <div>
+          <h2>Meine private Seite</h2>
+          <p class="muted">Persönliche Notizen & Galerie</p>
+        </div>
+      </div>
+      <button id="logoutBtn" class="btn">Abmelden</button>
+    </header>
+
+    <section class="container">
+      <div class="grid">
+        <article class="card">
+          <div class="card-header">
+            <h3>Mein Text</h3>
+            <div class="card-actions">
+              <button id="saveTextBtn" class="btn small">Speichern</button>
+              <button id="resetTextBtn" class="btn small ghost">Zurücksetzen</button>
+            </div>
+          </div>
+          <div id="textEditor" class="editor" contenteditable="true">
+            <h2>Beispielüberschrift
